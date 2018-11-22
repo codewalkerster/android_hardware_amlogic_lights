@@ -26,7 +26,7 @@ LOCAL_C_INCLUDES += \
 	system/core/libsystem/include
 
 LOCAL_SHARED_LIBRARIES := liblog libcutils
-LOCAL_MODULE := lights.amlogic
+LOCAL_MODULE := lights.$(TARGET_PRODUCT)
 LOCAL_MODULE_TAGS := optional
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 26 && echo OK),OK)
 LOCAL_PROPRIETARY_MODULE := true
